@@ -1,0 +1,14 @@
+# 01 - Installing the Domain Controller
+
+
+1. Use 'sconfig' to:
+    - Change the hostname
+    - Change the ip to static (192.168.111.155)
+    - Change the DNS server to our own IP address
+
+2. Install the Active Directory Windows Feature (with mangement tools)
+
+
+```shell
+Install-WindowsFeature AD-Domain-Services -IncludeManagementTools
+```
